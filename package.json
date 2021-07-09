@@ -1,0 +1,65 @@
+{
+  "name": "gatsby-custom-tailwind",
+  "description": "Custom Tailwind Starter",
+  "version": "1.2.4",
+  "author": "Mozart409",
+  "dependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.2.0",
+    "gatsby": "^2.21.15",
+    "gatsby-plugin-manifest": "2.4.31",
+    "gatsby-plugin-offline": "3.2.28",
+    "gatsby-plugin-postcss": "2.3.12",
+    "gatsby-plugin-react-helmet": "3.3.11",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.1.0",
+    "tailwindcss": "^1.8.10",
+    "typeface-inter": "^3.12.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "keywords": [
+    "gatsby",
+    "tailwind",
+    "tailwindcss",
+    "purgecss"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "analyze:lint": "eslint --ext .jsx --ext .js .",
+    "analyze:prettier": "prettier --list-different \"**/*.{js,jsx,json,md}\"",
+    "analyze": "yarn run analyze:lint && yarn run analyze:prettier",
+    "build": "gatsby clean && gatsby build",
+    "build:noclean": "gatsby build",
+    "fix:lint": "eslint --ext .jsx --ext .js . --fix",
+    "fix:prettier": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "fix": "yarn run fix:lint && yarn run fix:prettier",
+    "start": "gatsby develop",
+    "serve": "serve -l 9000 public",
+    "prod": "yarn build && yarn serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "7.9.0",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.21.2",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.12",
+    "husky": "^4.2.3",
+    "prettier": "2.1.2",
+    "pretty-quick": "^3.0.2",
+    "serve": "^11.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
